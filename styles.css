@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: grid;
+    place-items: center;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 370px;
+}
+
+.navbar img{
+    height: 30px;
+}
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+    
+}
+
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.home{
+    margin-right: 30px;
+}
+
+.navbar ul li{
+    transition: background-color 0.3s;
+    padding: 8px 12px;
+}
+
+.navbar ul li:hover{
+    background-color: #c3c3c3;
+}
+
+.navbar button{
+    height: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: rgb(35, 151, 35);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar button:hover{
+    background-color: rgb(23, 101, 23);
+}
+
+.hero{
+    padding: 100px;
+    background-color: rgb(222, 222, 222);
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.first-line{
+    margin-top: 50px;
+    font-size: 60px;
+    color: rgb(72, 72, 72);
+    margin-bottom: 0px;
+}
+
+.second-line{
+    margin: 0px;
+    font-size: 60px;
+    color:  rgb(35, 151, 35);
+    margin-bottom: 15px;
+}
+
+.hero p{
+    margin-top: 0px;
+    margin-bottom: 30px;
+    font-weight: lighter;
+    color: rgb(81, 81, 81);
+}
+
+.hero button{
+    height: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color:  rgb(35, 151, 35);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero button:hover{
+    background-color: rgb(23, 101, 23);
+}
+
+.statement{
+    text-align: center;
+    color: rgb(81, 81, 81);
+}
+
+.statement h1{
+    font-size: 30px;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    gap: 150px;
+    margin-top: 20px;
+}
+
+.card-1{
+    width: 280px;
+    height: 210px;
+    text-align: center;
+    color: rgb(81, 81, 81);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.card-2{
+    width: 280px;
+    height: 210px;
+    text-align: center;
+    color: rgb(81, 81, 81);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.card-3{
+    width: 280px;
+    height: 210px;
+    text-align: center;
+    color: rgb(81, 81, 81);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    border-radius: 7px;
+}
+
+.hero-2{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(81, 81, 81);
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.hero-2 img{
+    width: 500px;
+}
+
+.hero-2-content{
+    text-align: left;
+    gap: 30px;
+}
+
+.hero-2-content button{
+    height: 45px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color:  rgb(35, 151, 35);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hero-2-content button:hover{
+    background-color: rgb(23, 101, 23);
+}
+
+
+.marketing{
+    text-align: center;
+    color: rgb(81, 81, 81);
+    margin-top: 90px;
+}
+
+.caroseul{
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.container-1{
+    position: relative;
+    width: 350px;
+    height: 200px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.card {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 250px;
+    color: rgb(81, 81, 81);
+    font-size: 13px;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.card h2{
+    font-size: 18px;
+}
+
+.card p{
+    font-size: 17px;
+    color: #61b763;
+}
+
+.container-2{
+    position: relative;
+    width: 350px;
+    height: 200px;
+}
+
+.container-3{
+    position: relative;
+    width: 350px;
+    height: 200px;
+}
+
+.footer{
+    margin-top: 300px;
+    background-color: #28343c;
+    color: white;
+    width: 100%;
+}
