@@ -139,7 +139,7 @@ body {
     margin-top: 20px;
 }
 
-.card-1{
+.card-1, .card-2, .card-3 {
     width: 280px;
     height: 210px;
     text-align: center;
@@ -147,26 +147,14 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
     padding: 20px;
     border-radius: 7px;
+    transition: all 0.3s ease;
 }
 
-.card-2{
-    width: 280px;
-    height: 210px;
-    text-align: center;
-    color: rgb(81, 81, 81);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
-    border-radius: 7px;
-}
-
-.card-3{
-    width: 280px;
-    height: 210px;
-    text-align: center;
-    color: rgb(81, 81, 81);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); 
-    padding: 20px;
-    border-radius: 7px;
+.card-1:hover, .card-2:hover, .card-3:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .hero-2{
@@ -247,15 +235,39 @@ body {
     text-align: center;
     padding-top: 0px;
     padding-bottom: 0px;
+    transition: all 0.3s ease;
+}
+
+.card:hover{
+    background-color: #f0f0f0;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
 }
 
 .card h2{
     font-size: 18px;
 }
 
-.card p{
+.card p {
     font-size: 17px;
     color: #61b763;
+    transition: color 0.3s ease; 
+}
+
+.card p:hover {
+    color: #3a6c3b;
+    animation: bounce 0.6s ease;
+    cursor: pointer;
+}
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% { 
+        transform: translateX(100px);
+    }
 }
 
 .container-2{
@@ -403,14 +415,82 @@ body {
     background-color: #40444c;
     border: 1px solid #60646c; 
     color: #ffffff;
-    padding: 10px 10px;
+    padding: 0px;
+    padding-top: 3px;
     border-radius: 0 5px 5px 0; 
     cursor: pointer;
     transition: all 0.3s ease; 
 }
 
-.stay-upto-date button:hover {
-    background-color: #80848c; 
+.stay-upto-date button img{
+    height: 29px;
+    width: 29px;
 }
 
+.stay-upto-date button:hover {
+    background-color: #80848c; 
+    
+}
+
+
+
+@media (max-width: 1244px){
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navbar-right{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar ul li{
+        margin: 0px;
+    }
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+    .hero-content {
+        max-width: 100%;
+    }
+    .cards{
+        flex-direction: column;
+    }
+    .hero-2{
+        flex-direction: column;
+    }
+    .hero-2-content button{
+        margin-left: 270px;
+    }
+    .caroseul{
+        flex-direction: column;
+        gap: 200px;
+    }
+    .footer{
+        flex-direction: column;
+        
+    }
+    .left-footer ul{
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .company{
+        margin: 0px;
+        margin-left: 100px;
+    }
+    .stay-upto-date .input-container {
+        width: 30px;
+    }
+}
+
+@media (max-width: 645px) {
+    .hero-2-content button{
+        margin-left: 210px;
+    }
+}
 
